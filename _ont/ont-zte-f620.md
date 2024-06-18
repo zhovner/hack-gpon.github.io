@@ -242,3 +242,32 @@ Scanning JFFS2 FS: .  fsload_skip_bad_offset=0x2260000
  drwxr-xr-x        0 Fri Nov 13 07:23:20 2020 var
  drwxr-xr-x        0 Fri Nov 13 07:23:20 2020 wlan
 ```
+
+
+=> printenv
+baudrate=115200
+bootcmd=setenv bootargs console=$(console) root=/dev/mtdblock9 ro rootfstype=jffs2  mem=$(memsize);bootm 0x44000000;
+bootdelay=2
+bootfile=uboot.bin
+console=ttyS0,115200n8
+env_na==@@;
+env_pa==@@;
+ethact=eth0
+ethaddr=00:41:71:00:00:50
+filesize=2ee154
+fullfile=upgrade.bin
+gatewayip=192.168.1.1
+hostname=unknown
+ipaddr=192.168.1.1
+linuzfile=vmlinuz.bin
+loadaddr=0x42000000
+memsize=128M
+netmask=255.255.255.0
+netretry=5
+serverip=192.168.1.100
+stderr=serial
+stdin=serial
+stdout=serial
+versioninfo=U-Boot V7.0.10P2N20 20201113153519 0x1a00000 0x0 0x8f 0x83
+
+
